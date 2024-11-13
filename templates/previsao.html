@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sty.css')}}">
+    <title>Previsão para {{ clima.cidade }}</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão do Tempo para {{ clima.cidade }}</h1>
+
+        <ul>
+            <li><strong>Temperatura:</strong> {{ clima.temperatura }} °C</li>
+            <li><strong>Descrição:</strong> {{ clima.descricao }}</li>
+            <li><strong>Umidade:</strong> {{ clima.umidade }}%</li>
+            <li><strong>Velocidade do Vento:</strong> {{ clima.vento }} m/s</li>
+        </ul>
+    </div>
+    <a class="botao-voltar" href="/">Voltar</a>
+</body>
+</html>

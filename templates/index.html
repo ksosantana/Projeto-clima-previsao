@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/favicon_io/favicon-16x16.png" type="image/x-icon">
+    <title>Tempo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sty.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Obtenha a Previsão do Tempo</h1>
+        
+        <form action="/previsao" method="POST" class="mb-4">
+            <div class="mb-3">
+                <label for="cidade" class="form-label">Digite o nome da cidade:</label>
+                <input type="text" id="cidade" name="cidade" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Consultar</button>
+        </form>
+    </div>
+    {% if erro %}
+        <p style="color: red;">{{ erro }}</p>
+    {% endif %}
+</body>
+</html>
