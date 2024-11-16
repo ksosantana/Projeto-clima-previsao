@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previsão Climática</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sty.css')}}">
+    <title>Previsão para {{ clima.cidade }}</title>
 </head>
 <body>
     <div class="container">
-        <h1>Previsão Climática de {{ clima.cidade }}</h1>
+        <h1>Previsão do Tempo para {{ clima.cidade }}</h1>
 
-        <h2>Informações Climáticas:</h2>
         <ul>
-            <li><strong>Temperatura:</strong> {{ clima.temperatura }}°C</li>
+            <li><strong>Temperatura:</strong> {{ clima.temperatura }} °C</li>
             <li><strong>Descrição:</strong> {{ clima.descricao }}</li>
             <li><strong>Umidade:</strong> {{ clima.umidade }}%</li>
             <li><strong>Vento:</strong> {{ clima.vento }} m/s</li>
         </ul>
 
-        <h2>Gráficos Climáticos:</h2>
-        <div>
-            <!-- Inserir gráfico interativo aqui -->
-            {{ div_graph | safe }}
+        <div class="graph-container">
+            <h3 class="graph-title">Gráfico do Clima Atual</h3>
+            <div class="graph">
+                {{ div_graph|safe }}
+            </div>
         </div>
+    </div>
+    <div class="botao-voltar">
+        <a href="/">Voltar</a>
     </div>
 </body>
 </html>
