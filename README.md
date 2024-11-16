@@ -22,7 +22,7 @@ Somos alunos de Análise e Desenvolvimento de Sistemas (ADS) e desenvolvemos est
 📋 Como Executar o Projeto
 
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/ksosantana/Projeto-clima-previsao.git
 
 Instar e ativar o ambiente virtual.
 
