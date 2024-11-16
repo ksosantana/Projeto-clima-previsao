@@ -14,9 +14,12 @@ Somos alunos de Análise e Desenvolvimento de Sistemas (ADS) e desenvolvemos est
 🛠️ Tecnologias Utilizadas
 
   🐍 Linguagem de Programação: Python 
+  
    🌐 Framework: Flask 
-     📂 Banco de Dados: SQLite     
-        Frontend: HTML, CSS.
+  
+  📂 Banco de Dados: SQLite     
+     
+   Frontend: HTML, CSS.
 
 
 📋 Como Executar o Projeto
@@ -24,7 +27,7 @@ Somos alunos de Análise e Desenvolvimento de Sistemas (ADS) e desenvolvemos est
 
 git clone https://github.com/ksosantana/Projeto-clima-previsao.git
 
-Instar e ativar o ambiente virtual.
+Instalar e ativar o ambiente virtual.
 
 Instale as dependências:
 
